@@ -30,7 +30,7 @@ export class CadastroFilmesComponent implements OnInit {
     return this.cadastro.controls;
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.id = this.activatedRoute.snapshot.params['id'];
     if (this.id) {
       this.filmeService.visualizar(this.id)
